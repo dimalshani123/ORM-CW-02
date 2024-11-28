@@ -1,0 +1,28 @@
+#sidebar{
+    -fx-background-color: #6b419e;
+    -fx-background-radius: 30;
+}
+#countSection{
+    -fx-background-color: #dbdcdc;
+    -fx-background-radius: 30;
+}
+
+#graphSection{
+    -fx-background-color: #dbdcdc;
+    -fx-background-radius: 30;
+}
+#dashboardBtn,
+#userBtn,
+#studentBtn,
+#courseBtn,
+#paymentBtn,
+#registrationBtn{
+    -fx-text-fill: white;
+}
+
+#count1,
+#count2,
+#count3{
+    -fx-text-fill: #6b419e;
+    -fx-font-weight: 100;
+}

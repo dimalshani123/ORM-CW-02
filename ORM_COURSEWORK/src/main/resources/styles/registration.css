@@ -1,0 +1,29 @@
+#registerDetailPane{
+    -fx-border-color: purple;
+    -fx-border-radius: 15;
+}
+#txtRegisterID,
+#txtDate,
+#cmbStudentId,
+#txtStudentName,
+#cmbProgramID,
+#txtProgramName,
+#txtProgramFee,
+#txtUpfrontPayment{
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+}
+
+#saveBtn,
+#updateBtn,
+#deleteBtn,
+#clearBtn,
+#searchBtn,
+#viewBtn{
+    -fx-background-color: #bc3ebc;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header{
+    -fx-background-color: #c088c0;
+}

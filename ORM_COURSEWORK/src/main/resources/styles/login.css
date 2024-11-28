@@ -1,0 +1,20 @@
+#loginSide1{
+    -fx-background-color: black;
+}
+#loginSide2{
+    -fx-background-color: #af36b4;
+}
+#loginBtn{
+    -fx-background-color: #af36b4;
+    -fx-background-radius: 10;
+}
+#loginSide4{
+    -fx-background-color: #af36b4;
+    -fx-border-color: #912995;
+    -fx-border-radius: 30;
+}
+
+#txtUsername,
+#txtPassword{
+    -fx-border-width: 2px;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginForm" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+
+    <children>
+        <AnchorPane fx:id="loginSide1" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #2D2D2D;" />
+
+        <AnchorPane fx:id="loginSide2" layoutX="200.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #F8EFBA;">
+            <children>
+                <VBox alignment="CENTER" layoutX="100.0" layoutY="81.0" prefHeight="238.0" prefWidth="200.0" spacing="15">
+                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Login" />
+
+                    <TextField fx:id="txtUsername" promptText="Username" style="-fx-padding: 10px;" />
+
+                    <StackPane>
+                        <PasswordField fx:id="txtPassword" promptText="Password" style="-fx-padding: 10px;" />
+                        <TextField fx:id="txtPasswordVisible" managed="false" promptText="Password" style="-fx-padding: 10px;" visible="false" />
+                        <Button alignment="CENTER_RIGHT" layoutX="250.0" layoutY="0.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#passwordVisible" style="-fx-background-color: #bdc3c7;" text="Show" />
+                    </StackPane>
+
+                    <Button fx:id="loginBtn" onAction="#loginBtnOnAction" prefHeight="22.0" prefWidth="95.0" style="-fx-background-color: #2D2D2D; -fx-text-fill: white; -fx-padding: 10px; -fx-font-size: 14px;" text="Login">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font></Button>
+
+                    <Hyperlink fx:id="signUpHyperlink" onAction="#signUpHyperlinkOnAction" text="Don't have an account? Sign Up" />
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

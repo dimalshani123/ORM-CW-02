@@ -1,0 +1,34 @@
+#studentForm{
+    -fx-border-color: purple;
+    -fx-border-radius: 15;
+}
+#txtStudentId,
+#cmbUser,
+#txtStudentName,
+#txtEmail,
+#txtAddress,
+#txtContact{
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+}
+
+#saveBtn,
+#updateBtn,
+#deleteBtn,
+#clearBtn{
+    -fx-background-color: #bc3ebc;
+    -fx-text-fill: white;
+}
+
+#viewBtn {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
+
+#searchBtn{
+    -fx-background-color: #be4796;
+    -fx-text-fill: white;
+}
+.table-view .column-header{
+    -fx-background-color: #c088c0;
+}

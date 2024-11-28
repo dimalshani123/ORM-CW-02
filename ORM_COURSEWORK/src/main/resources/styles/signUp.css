@@ -1,0 +1,22 @@
+#signForm{
+    -fx-background-color: #e3bdde;
+}
+#signUpDetails{
+    -fx-background-color: #e6d3e3;
+    -fx-background-radius: 20;
+}
+#signUpBtn{
+    -fx-background-color: #c741b7;
+    -fx-background-radius: 10;
+    -fx-focus-traversable: pointer;
+}
+#cmbUser,
+#txtUserId,
+#txtUsername,
+#txtPassword,
+#txtPassword2,
+#txtEmail,
+#txtMobile{
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+}

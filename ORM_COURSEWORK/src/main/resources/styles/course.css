@@ -1,0 +1,24 @@
+#courseForm{
+    -fx-border-color: purple;
+    -fx-border-radius: 15;
+}
+
+#txtProgramID,
+#txtProgramName,
+#txtProgramFee,
+#txtDuration{
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+}
+
+#saveBtn,
+#updateBtn,
+#deleteBtn,
+#clearBtn{
+    -fx-background-color: #bc3ebc;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header{
+    -fx-background-color: #c088c0;
+}
