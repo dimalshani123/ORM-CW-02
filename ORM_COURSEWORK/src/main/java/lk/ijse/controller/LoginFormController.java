@@ -82,9 +82,9 @@ public class LoginFormController {
 
             DashboardFormController dashboardController = loader.getController();
 
-            // If the user type is "Admission coordinator", disable buttons in the dashboard
-            if (userType.equalsIgnoreCase("Admission coordinator")) {
-                dashboardController.disableButtons(userType);
+            // Check if the user is not an admin
+            if (!userType.equalsIgnoreCase("admin")) {
+                dashboardController.disablePaymentButton();
             }
 
             Stage stage = new Stage();
@@ -134,15 +134,11 @@ public class LoginFormController {
 
     @FXML
     void txtPasswordOnKeyReleased(KeyEvent event) {
-        Regex.setTextColor(TextFields.Password,txtPassword);
+        Regex.setTextColor(TextFields.Password, txtPassword);
     }
 
     @FXML
     void txtUsernameOnKeyReleased(KeyEvent event) {
-        Regex.setTextColor(TextFields.UserName,txtUsername);
+        Regex.setTextColor(TextFields.UserName, txtUsername);
     }
-
 }
-
-
-

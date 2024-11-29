@@ -126,4 +126,10 @@ public class DashboardFormController {
         String userType = "Admission coordinator"; // Replace with actual logic
         disableButtons(userType);
     }
+
+    public void disablePaymentButton() {
+        paymentBtn.setDisable(true);
+        userBtn.setDisable(true);
+    }
+
 }

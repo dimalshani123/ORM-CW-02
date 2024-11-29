@@ -2,33 +2,78 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+<AnchorPane style="-fx-background-color: #F8EFBA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
     <children>
 
         <!-- Buttons on the left side -->
-        <AnchorPane layoutX="14.0" layoutY="202.0" prefHeight="500.0" prefWidth="150" style="-fx-background-color: #F8EFBA;">
+        <AnchorPane layoutX="14.0" layoutY="150.0" prefHeight="600.0" prefWidth="150" style="-fx-background-color: #F8EFBA;">
             <children>
-                <Button fx:id="dashboardBtn" layoutX="10" layoutY="10" onAction="#btnDashboardOnAction" prefHeight="48.0" prefWidth="130" text="Dashboard">
+                <Button fx:id="dashboardBtn" alignment="TOP_CENTER" layoutX="10" layoutY="10" onAction="#btnDashboardOnAction" prefHeight="82.0" prefWidth="130" style="-fx-background-color: #bcb88a;" text="Dashboard">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font size="18.0" />
                </font></Button>
-                <Button fx:id="studentBtn" layoutX="10.0" layoutY="104.0" onAction="#btnStudentOnAction" prefWidth="130" text="Student" />
-                <Button fx:id="courseBtn" layoutX="10.0" layoutY="172.0" onAction="#btnCourseOnAction" prefWidth="130" text="Course" />
-                <Button fx:id="registrationBtn" layoutX="10.0" layoutY="244.0" onAction="#registrationBtnOnAction" prefWidth="130" text="Registration" />
-                <Button fx:id="paymentBtn" layoutX="10.0" layoutY="314.0" onAction="#btnPaymentOnAction" prefWidth="130" text="Payment" />
-                <Button fx:id="userBtn" layoutX="10.0" layoutY="385.0" onAction="#btnUserOnAction" prefWidth="130" text="User" />
+                <Button fx:id="studentBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="134.0" onAction="#btnStudentOnAction" prefHeight="40.0" prefWidth="130" style="-fx-background-color: #bdb76b;" text="Student" />
+                <Button fx:id="courseBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="224.0" onAction="#btnCourseOnAction" prefHeight="40.0" prefWidth="130" style="-fx-background-color: #bdb76b;" text="Course" />
+                <Button fx:id="registrationBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="316.0" onAction="#registrationBtnOnAction" prefHeight="40.0" prefWidth="130" style="-fx-background-color: #bdb76b;" text="Registration" />
+                <Button fx:id="paymentBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="404.0" onAction="#btnPaymentOnAction" prefHeight="40.0" prefWidth="130" style="-fx-background-color: #bdb76b;" text="Payment" />
+                <Button fx:id="userBtn" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="486.0" onAction="#btnUserOnAction" prefHeight="40.0" prefWidth="130" style="-fx-background-color: #bdb76b;" text="User">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="25.0" layoutY="227.0">
+               <image>
+                  <Image url="@/assets/images/icons8-course-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="25.0" layoutY="406.0">
+               <image>
+                  <Image url="@/assets/images/icons8-payment-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="27.0" layoutY="488.0">
+               <image>
+                  <Image url="@/assets/images/icons8-registration-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="25.0" layoutY="136.0">
+               <image>
+                  <Image url="@/assets/images/icons8-student-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="26.0" layoutY="318.0">
+               <image>
+                  <Image url="@/assets/images/icons8-user-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="50.0" layoutX="50.0" layoutY="51.0">
+               <image>
+                  <Image url="@/assets/images/icons8-template-50.png" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
 
         <!-- Center node for dynamic content loading -->
         <AnchorPane fx:id="centerNode" layoutX="170" layoutY="150" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: White;">
         </AnchorPane>
-      <Label layoutX="401.0" layoutY="46.0" prefHeight="54.0" prefWidth="238.0" text="Dashboard" textFill="#e8ebed">
+      <ImageView fitHeight="113.0" fitWidth="120.0" layoutX="430.0" layoutY="23.0">
+         <image>
+            <Image url="@/assets/images/login.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="279.0" layoutY="34.0" prefHeight="74.0" prefWidth="120.0" text="SHINE" textFill="#282715">
          <font>
-            <Font name="System Bold" size="36.0" />
+            <Font name="Perpetua Titling MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="587.0" layoutY="47.0" prefHeight="48.0" prefWidth="232.0" text="academy">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="36.0" />
          </font>
       </Label>
     </children>

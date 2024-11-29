@@ -11,7 +11,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationFormController">
     <children>
-        <Pane fx:id="registerDetailPane" layoutX="7.0" layoutY="14.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #F8EFBA;">
+        <Pane fx:id="registerDetailPane" layoutX="-1.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #F8EFBA;">
             <children>
                 <Label layoutX="298.0" layoutY="14.0" prefHeight="35.0" prefWidth="220.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Registration Form" />
 
@@ -42,7 +42,7 @@
                 <Button fx:id="saveBtn" layoutX="283.0" layoutY="288.0" onAction="#saveBtnOnAction" prefWidth="100.0" style="-fx-background-color: lightgreen;" text="Save" />
                 <Button fx:id="clearBtn" layoutX="412.0" layoutY="288.0" onAction="#clearBtnOnAction" prefWidth="100.0" style="-fx-background-color: yellow;" text="Clear" />
 
-                <TableView fx:id="registrationTbl" layoutX="32.0" layoutY="356.0" prefHeight="186.0" prefWidth="723.0">
+                <TableView fx:id="registrationTbl" layoutX="40.0" layoutY="356.0" prefHeight="186.0" prefWidth="721.0">
                     <columns>
                         <TableColumn fx:id="colRegisterID" prefWidth="100.0" text="Register ID" />
                         <TableColumn fx:id="colDate" prefWidth="80.0" text="Date" />

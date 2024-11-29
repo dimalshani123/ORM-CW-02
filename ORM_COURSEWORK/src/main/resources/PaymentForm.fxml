@@ -11,31 +11,31 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="paymentPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.PaymentFormController">
+<AnchorPane fx:id="paymentPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #F8EFBA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.PaymentFormController">
     <children>
 
         <Pane fx:id="paymentDetailPane" layoutX="20.0" layoutY="50.0" prefHeight="200.0" prefWidth="760.0" style="-fx-background-color: #F8EFBA; -fx-padding: 10;">
             <children>
-                <Label layoutX="14.0" layoutY="14.0" text="Payment ID:" />
-                <TextField fx:id="txtPaymentID" layoutX="120.0" layoutY="10.0" prefWidth="150.0" />
+                <Label layoutX="13.0" layoutY="35.0" text="Payment ID:" />
+                <TextField fx:id="txtPaymentID" layoutX="120.0" layoutY="31.0" prefWidth="150.0" />
 
-                <Label layoutX="14.0" layoutY="54.0" text="Register ID:" />
-                <ComboBox fx:id="cmbRegisterID" layoutX="120.0" layoutY="50.0" onAction="#cmbRegisterIDOnAction" prefWidth="150.0" />
+                <Label layoutX="14.0" layoutY="75.0" text="Register ID:" />
+                <ComboBox fx:id="cmbRegisterID" layoutX="120.0" layoutY="71.0" onAction="#cmbRegisterIDOnAction" prefWidth="150.0" />
 
-                <Label layoutX="14.0" layoutY="94.0" text="Payment Date:" />
-                <TextField fx:id="txtPaymentDate" editable="false" layoutX="120.0" layoutY="90.0" prefWidth="150.0" />
+                <Label layoutX="14.0" layoutY="115.0" text="Payment Date:" />
+                <TextField fx:id="txtPaymentDate" editable="false" layoutX="120.0" layoutY="111.0" prefWidth="150.0" />
 
-                <Label layoutX="300.0" layoutY="94.0" text="Upfront Payment:" />
-                <TextField fx:id="txtUpfrontPayment" editable="false" layoutX="421.0" layoutY="90.0" prefWidth="150.0" />
+                <Label layoutX="300.0" layoutY="115.0" text="Upfront Payment:" />
+                <TextField fx:id="txtUpfrontPayment" editable="false" layoutX="421.0" layoutY="111.0" prefWidth="150.0" />
 
-                <Label layoutX="300.0" layoutY="14.0" text="Total Amount:" />
-                <TextField fx:id="txtTotalAmount" editable="false" layoutX="421.0" layoutY="10.0" prefWidth="150.0" />
+                <Label layoutX="299.0" layoutY="35.0" text="Total Amount:" />
+                <TextField fx:id="txtTotalAmount" editable="false" layoutX="421.0" layoutY="31.0" prefWidth="150.0" />
 
-                <Label layoutX="300.0" layoutY="54.0" text="Due Amount:" />
-                <TextField fx:id="txtDueAmount" editable="false" layoutX="421.0" layoutY="50.0" prefWidth="150.0" />
+                <Label layoutX="300.0" layoutY="75.0" text="Due Amount:" />
+                <TextField fx:id="txtDueAmount" editable="false" layoutX="421.0" layoutY="71.0" prefWidth="150.0" />
 
-                <Button fx:id="saveBtn" layoutX="257.0" layoutY="145.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: lightgreen;" text="Save" />
-                <Button fx:id="clearBtn" layoutX="354.0" layoutY="144.0" mnemonicParsing="false" onAction="#clearBtnOnAction" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: yellow;" text="Clear" />
+                <Button fx:id="saveBtn" layoutX="599.0" layoutY="158.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: lightgreen;" text="Save" />
+                <Button fx:id="clearBtn" layoutX="674.0" layoutY="158.0" mnemonicParsing="false" onAction="#clearBtnOnAction" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: yellow;" text="Clear" />
             </children>
         </Pane>
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ORM_COURSEWORK1-akka.iml" filepath="$PROJECT_DIR$/.idea/ORM_COURSEWORK1-akka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ORM_COURSEWORK/ORM_COURSEWORK.iml" filepath="$PROJECT_DIR$/ORM_COURSEWORK/ORM_COURSEWORK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ORM_COURSEWORK2.iml" filepath="$PROJECT_DIR$/.idea/ORM_COURSEWORK2.iml" />
     </modules>
   </component>
 </project>

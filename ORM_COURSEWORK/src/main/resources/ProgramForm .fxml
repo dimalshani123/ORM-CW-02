@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="559.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ProgramFormController">
+<AnchorPane prefHeight="559.0" prefWidth="802.0" style="-fx-background-color: #F8EFBA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ProgramFormController">
 
     <children>
 
@@ -18,7 +18,7 @@
             <children>
                 <!-- Program ID -->
                 <Text layoutX="20.0" layoutY="36.0" text="Program ID:" />
-                <TextField fx:id="txtProgramID" editable="false" layoutX="120.0" layoutY="20.0" prefWidth="150.0" />
+                <TextField fx:id="txtProgramID" editable="false" layoutX="120.0" layoutY="20.0" prefHeight="25.0" prefWidth="300.0" />
 
                 <!-- Program Name -->
                 <Text layoutX="20.0" layoutY="76.0" text="Name:" />
@@ -26,17 +26,17 @@
 
                 <!-- Duration -->
                 <Text layoutX="20.0" layoutY="115.0" text="Duration:" />
-                <TextField fx:id="txtDuration" layoutX="120.0" layoutY="100.0" prefWidth="150.0" />
+                <TextField fx:id="txtDuration" layoutX="120.0" layoutY="100.0" prefHeight="25.0" prefWidth="300.0" />
 
                 <!-- Fee -->
                 <Text layoutX="20.0" layoutY="154.0" text="Fee:" />
-                <TextField fx:id="txtProgramFee" layoutX="120.0" layoutY="140.0" prefWidth="150.0" />
+                <TextField fx:id="txtProgramFee" layoutX="120.0" layoutY="140.0" prefHeight="25.0" prefWidth="300.0" />
 
                 <!-- Buttons -->
-                <Button fx:id="saveBtn" layoutX="20.0" layoutY="190.0" onAction="#saveBtnOnAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: lightgreen;" text="Save" />
-                <Button fx:id="updateBtn" layoutX="90.0" layoutY="190.0" onAction="#updateBtnOnAction" style="-fx-background-color: gray;" text="Update" />
-                <Button fx:id="deleteBtn" layoutX="170.0" layoutY="190.0" onAction="#deleteBtnOnAction" style="-fx-background-color: tomato;" text="Delete" />
-                <Button fx:id="clearBtn" layoutX="244.0" layoutY="190.0" onAction="#clearBtnOnAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: yellow;" text="Clear" />
+                <Button fx:id="saveBtn" layoutX="491.0" layoutY="203.0" onAction="#saveBtnOnAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: lightgreen;" text="Save" />
+                <Button fx:id="updateBtn" layoutX="552.0" layoutY="203.0" onAction="#updateBtnOnAction" style="-fx-background-color: gray;" text="Update" />
+                <Button fx:id="deleteBtn" layoutX="620.0" layoutY="203.0" onAction="#deleteBtnOnAction" style="-fx-background-color: tomato;" text="Delete" />
+                <Button fx:id="clearBtn" layoutX="683.0" layoutY="203.0" onAction="#clearBtnOnAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: yellow;" text="Clear" />
             </children>
         </Pane>
 

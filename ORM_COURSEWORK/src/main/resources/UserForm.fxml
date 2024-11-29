@@ -7,65 +7,43 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserFormController">
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: #F8EFBA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserFormController">
 
     <!-- Header -->
-    <Pane layoutX="0" layoutY="0" prefHeight="50" prefWidth="800" style="-fx-background-color: white;">
-      <children>
-         <Text fx:id="studentHeading" layoutX="296.0" layoutY="35.0" style="-fx-font-size: 24px;" text="User Management">
-            <font>
-               <Font name="System Bold" size="12.0" />
-            </font>
-         </Text>
-      </children></Pane>
+    <Pane layoutX="0" layoutY="0" prefHeight="50" prefWidth="800" style="-fx-background-color: #F8EFBA;">
+        <children>
+            <Text fx:id="studentHeading" layoutX="296.0" layoutY="35.0" style="-fx-font-size: 24px;" text="User Management">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Text>
+        </children>
+    </Pane>
 
     <!-- Form Section -->
-    <VBox layoutX="121.0" layoutY="71.0" prefHeight="226.0" prefWidth="524.0" spacing="10" style="-fx-background-color: #F8EFBA;">
+    <Label layoutX="121.0" layoutY="80.0" text="User ID:" />
+    <TextField fx:id="txtUserId" layoutX="200.0" layoutY="75.0" prefWidth="200" />
 
-        <!-- User ID -->
-        <HBox spacing="10" style="-fx-background-color: #F8EFBA;">
-            <Label text="User ID:" />
-            <TextField fx:id="txtUserId" prefWidth="200" />
-        </HBox>
+    <Label layoutX="121.0" layoutY="120.0" text="Username:" />
+    <TextField fx:id="txtUserName" layoutX="200.0" layoutY="115.0" prefWidth="200" />
 
-        <!-- Username -->
-        <HBox spacing="10">
-            <Label text="Username:" />
-            <TextField fx:id="txtUserName" prefWidth="200" />
-        </HBox>
+    <Label layoutX="121.0" layoutY="160.0" text="Password:" />
+    <PasswordField fx:id="txtPassword" layoutX="200.0" layoutY="155.0" prefWidth="200" />
 
-        <!-- Password -->
-        <HBox spacing="10">
-            <Label text="Password:" />
-            <PasswordField fx:id="txtPassword" prefWidth="200" />
-        </HBox>
+    <Label layoutX="121.0" layoutY="200.0" text="Email:" />
+    <TextField fx:id="txtEmail" layoutX="200.0" layoutY="195.0" prefWidth="200" />
 
-        <!-- Email -->
-        <HBox spacing="10">
-            <Label text="Email:" />
-            <TextField fx:id="txtEmail" prefWidth="200" />
-        </HBox>
+    <Label layoutX="121.0" layoutY="240.0" text="Contact:" />
+    <TextField fx:id="txtContact" layoutX="200.0" layoutY="235.0" prefWidth="200" />
 
-        <!-- Contact -->
-        <HBox spacing="10">
-            <Label text="Contact:" />
-            <TextField fx:id="txtContact" prefWidth="200" />
-        </HBox>
-
-        <!-- Action Buttons -->
-        <HBox spacing="10">
-            <Button fx:id="clearBtn" onAction="#clearBtnOnAction" style="-fx-background-color: yellow;" text="Clear" />
-            <Button fx:id="updateBtn" onAction="#updateBtnOnAction" style="-fx-background-color: gray;" text="Update" />
-            <Button fx:id="deleteBtn" onAction="#deleteBtnOnAction" style="-fx-background-color: tomato;" text="Delete" />
-        </HBox>
-
-    </VBox>
+    <!-- Action Buttons -->
+    <Button fx:id="clearBtn" layoutX="669.0" layoutY="274.0" onAction="#clearBtnOnAction" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: yellow;" text="Clear" />
+    <Button fx:id="updateBtn" layoutX="517.0" layoutY="274.0" onAction="#updateBtnOnAction" style="-fx-background-color: gray;" text="Update" />
+    <Button fx:id="deleteBtn" layoutX="595.0" layoutY="274.0" onAction="#deleteBtnOnAction" style="-fx-background-color: tomato;" text="Delete" />
 
     <!-- User Table -->
     <TableView fx:id="userTbl" layoutX="61.0" layoutY="322.0" prefHeight="250.0" prefWidth="662.0">

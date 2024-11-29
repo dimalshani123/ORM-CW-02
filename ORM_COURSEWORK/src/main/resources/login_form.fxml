@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -13,7 +15,7 @@
 <AnchorPane fx:id="loginForm" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
 
     <children>
-        <AnchorPane fx:id="loginSide1" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #2D2D2D;" />
+        <AnchorPane fx:id="loginSide1" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #bdb76b;" />
 
         <AnchorPane fx:id="loginSide2" layoutX="200.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #F8EFBA;">
             <children>
@@ -23,19 +25,28 @@
                     <TextField fx:id="txtUsername" promptText="Username" style="-fx-padding: 10px;" />
 
                     <StackPane>
-                        <PasswordField fx:id="txtPassword" promptText="Password" style="-fx-padding: 10px;" />
-                        <TextField fx:id="txtPasswordVisible" managed="false" promptText="Password" style="-fx-padding: 10px;" visible="false" />
-                        <Button alignment="CENTER_RIGHT" layoutX="250.0" layoutY="0.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#passwordVisible" style="-fx-background-color: #bdc3c7;" text="Show" />
+                        <!-- Password Field -->
+                        <PasswordField fx:id="txtPassword" promptText="Password" style="-fx-padding: 10px; -fx-background-radius: 5;" />
+                        <!-- Text Field for visible password -->
+                        <TextField fx:id="txtPasswordVisible" managed="false" promptText="Password" style="-fx-padding: 10px; -fx-background-radius: 5;" visible="false" />
+                        <!-- Show Button -->
+                        <Button alignment="CENTER" onMouseClicked="#passwordVisible" style="-fx-background-color: #bdb76b; -fx-text-fill: black; -fx-font-size: 12px; -fx-font-weight: bold; -fx-padding: 3; -fx-background-radius: 5;" text="Show" StackPane.alignment="CENTER_RIGHT" />
                     </StackPane>
 
                     <Button fx:id="loginBtn" onAction="#loginBtnOnAction" prefHeight="22.0" prefWidth="95.0" style="-fx-background-color: #2D2D2D; -fx-text-fill: white; -fx-padding: 10px; -fx-font-size: 14px;" text="Login">
-                  <font>
-                     <Font name="System Bold" size="13.0" />
-                  </font></Button>
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font>
+                    </Button>
 
                     <Hyperlink fx:id="signUpHyperlink" onAction="#signUpHyperlinkOnAction" text="Don't have an account? Sign Up" />
                 </VBox>
             </children>
         </AnchorPane>
+      <ImageView fitHeight="165.0" fitWidth="170.0" layoutX="15.0" layoutY="121.0">
+         <image>
+            <Image url="@/assets/images/login.jpg" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
